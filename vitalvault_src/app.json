@@ -2,7 +2,7 @@
   "expo": {
     "name": "vitalvault",
     "slug": "vitalvault",
-    "version": "1.0.0",
+    "version": "0.0.1-alpha",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "vitalvault",
