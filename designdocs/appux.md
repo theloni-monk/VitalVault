@@ -36,6 +36,10 @@ Check each file in the store for tampering. Just a CRC is fine.
 ##### Model loading:
 Verify model weights against a hash as you load them into the NPU high-bandwidth memory.
 
+### About
+Information on app, mission, credit, how to use, and links to other pages.
+
+
 ### Injest & Organize
 file-folder style interface. Users can make folders upload documents to those folders. One should be able to search only within a given folder.
 
@@ -44,7 +48,7 @@ Tagging can allow for linking things across folders.
 ### Read
 PDF & image renderer. Needs to handle decryption elegantly. Users should be able to leave notes or comments to the metadata to assist retrival.
 
-### Retrieve
+### Find
 Scope is given in props from organization page.
 
 By default, search will rank order all documents in scope. Searches lists should be able to be narrowed by subsequent queries.
