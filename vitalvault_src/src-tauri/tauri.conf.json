@@ -6,7 +6,7 @@
   "build": {
     "frontendDist": "../build",
     "devUrl": "http://localhost:8081",
-    "beforeDevCommand": "npx expo start",
+    "beforeDevCommand": "npx expo start -c",
     "beforeBuildCommand": "eas build --platform all"
   },
   "app": {
