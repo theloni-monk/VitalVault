@@ -13,9 +13,7 @@ Want users to be able to operate without a tutorial. Heavy use of iconography, a
 Users should not have to be able to understand english or american idioms / symbolism to use the software.
 
 ### Security
-
 Password and/or biometric integration at login.
-
 
 ### No-nonsense: a tool, not your friend
 This is more a philosophical point. I believe that technology shouldn't pretend that it "knows" you or cares about how you feel. The goal of this software is to help people retrive their medical information, it shouldn't do anything else.
@@ -37,8 +35,7 @@ Check each file in the store for tampering. Just a CRC is fine.
 Verify model weights against a hash as you load them into the NPU high-bandwidth memory.
 
 ### About
-Information on app, mission, credit, how to use, and links to other pages.
-
+Information on app, mission, credit, how to use, and links to other pages. Language option.
 
 ### Injest & Organize
 file-folder style interface. Users can make folders upload documents to those folders. One should be able to search only within a given folder.
