@@ -8,9 +8,12 @@ export default function Index() {
 
   return (
     <View
-      className="bg-amber-500 justify-center align-baseline"
+      className="bg-amber-50 flex-1 justify-top w-full"
     >
-      <Text className='text-purple-500'>VitalValut is a bhal..;...</Text>
+      <Text className='text-blue-800 text-xl flex-col font-bold self-center w-3/4 pt-10' >
+        VitalVault is a project dedicated to the secure storage and easy retrieval of medical documents on mobile devices.
+      </Text>
+      
     </View>
   );
 }

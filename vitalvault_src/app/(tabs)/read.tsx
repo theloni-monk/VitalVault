@@ -8,9 +8,9 @@ export default function Read() {
 
   return (
     <View
-      className="background-offwhite justify-center align-baseline"
+      className="bg-amber-50 flex-1 justify-top"
     >
-      <Text>Review your docs here</Text>
+      <Text className='text-blue-800 text-xl flex-col font-bold self-center w-3/4 pt-10' >Review your docs here</Text>
     </View>
   );
 }

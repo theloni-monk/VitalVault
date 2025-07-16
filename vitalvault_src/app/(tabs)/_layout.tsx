@@ -6,7 +6,8 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 export default function TabLayout() {
   return (
     <Tabs>
-      <Tabs.Screen name="index" options ={{title:"About",
+      <Tabs.Screen name="index" options ={
+        {title:"About",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
           ),}}/>
