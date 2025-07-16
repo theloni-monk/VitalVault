@@ -44,7 +44,7 @@ As such, we must persist the DB to disk in an encrypted [parquet file](https://p
 
 ### Tests
 ...tbd
-testing plan: main enemy is persisting through unexpected process halts
+testing plan: main challenge is persisting through unexpected process halts
 
 ### Security
 Apache Parquet db file format is chosen for its modular encryption paradigm.
@@ -52,7 +52,6 @@ Apache Parquet db file format is chosen for its modular encryption paradigm.
 Potential sources of secret leakage include
  - in memory buffer overread(unlikely)
  - disk permission manipulation(sideloaded apps can get file read access)
- - 
 
 
 
