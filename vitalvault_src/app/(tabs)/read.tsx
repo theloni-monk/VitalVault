@@ -3,9 +3,8 @@ import "../../global.css"
 
 
 export default function Read() {
-  //WRITEME: on startup launch async workers to verify files
-  //WRITEME: on all jobs complete go to About page
-
+  // get doc scope from tauriappstate, load prev and next in scope
+  // swipe through docs in scope to read, autosyncs scope with manage tab
   return (
     <View
       className="bg-amber-50 flex-1 justify-top"

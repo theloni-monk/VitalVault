@@ -3,9 +3,7 @@ import "../../global.css"
 
 
 export default function Manage() {
-  //WRITEME: on startup launch async workers to verify files
-  //WRITEME: on all jobs complete go to About page
-
+  //WRITEME: fetch files, allow group alisasing into folders - backend structure is flat
   return (
     <View
       className="bg-amber-50 flex-1 justify-top"

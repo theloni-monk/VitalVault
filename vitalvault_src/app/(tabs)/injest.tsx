@@ -4,7 +4,7 @@ import "../../global.css"
 
 export default function Injest() {
   //WRITEME: on startup launch async workers to verify files
-  //WRITEME: on all jobs complete go to About page
+  //WRITEME: on all jobs complete send push notification
 
   return (
     <View
