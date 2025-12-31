@@ -39,12 +39,15 @@ Mobile devices can arbitrarily halt and deallocate a process without warning. Fo
 
 As such, we must persist the DB to disk in an encrypted [parquet file](https://parquet.apache.org/docs/file-format/data-pages/encryption/#53-protection-of-sensitive-metadata)
 
+DuckDB can do data-at-rest encryption which is perfect for this
+https://duckdb.org/2025/11/19/encryption-in-duckdb
+
 ### Sources
-```src-tauri/src/docstore```
+```src-tauri/src/docstruct```
 
 ### Tests
 ...tbd
-testing plan: main challenge is persisting through unexpected process halts
+testing plan: main challenge is persisting through unexpected process halts, not sure how best to approach this with traditional CI
 
 ### Security
 Apache Parquet db file format is chosen for its modular encryption paradigm.
