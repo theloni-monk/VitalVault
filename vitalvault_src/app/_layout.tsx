@@ -38,7 +38,6 @@ export default function RootLayout() {
       <View className="flex-1 flex-col bg-amber-50">
         <View className="justify-center align-top h-full">
           <Text className="text-blue-800 font-bold text-2xl self-center">Loading stuff...{"\n"}</Text>
-          FIXME: no whatever
           <FontAwesome5 className = "color-pink-200 animate-pulse self-center" size="1000" name="heartbeat"/>
         </View>
       </View>

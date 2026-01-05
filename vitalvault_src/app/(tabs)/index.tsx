@@ -3,8 +3,7 @@ import "../../global.css"
 
 
 export default function Index() {
-  //WRITEME: on startup launch async workers to verify files
-  //WRITEME: on all jobs complete go to About page
+  //WRITEME: basic instructions, link to mission statement, link to github
 
   return (
     <View

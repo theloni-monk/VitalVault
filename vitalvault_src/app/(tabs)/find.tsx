@@ -1,11 +1,8 @@
 import { Text, View } from "react-native";
 import "../../global.css"
 
-
+//TODO: search bar, past 3 searches on hover, recent files, pinned files
 export default function Find() {
-  //WRITEME: on startup launch async workers to verify files
-  //WRITEME: on all jobs complete go to About page
-
   return (
     <View
       className="bg-amber-50 flex-1 justify-top"

@@ -5,6 +5,8 @@ import "../../global.css"
 export default function Read() {
   // get doc scope from tauriappstate, load prev and next in scope
   // swipe through docs in scope to read, autosyncs scope with manage tab
+  // TODO: decide on rust render -> canvas vs js-based renderer -> <PDF />
+
   return (
     <View
       className="bg-amber-50 flex-1 justify-top"
