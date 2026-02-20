@@ -7,6 +7,7 @@ import { Text, View } from "react-native";
 import { useEffect, useState} from 'react';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
 
+import Bootpage from "../components/bootpage";
 
 export default function RootLayout() {
 
@@ -15,7 +16,8 @@ export default function RootLayout() {
   const [fontLoaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
-  
+  const [unlocked, setUnlocked] = useState(false);
+
   //on mount
   useEffect(() => {
     // Fake loading, eventually replaced with database access and model weight access
@@ -27,7 +29,7 @@ export default function RootLayout() {
     return () => clearTimeout(timeoutId);
   }, []); // Empty dependency array ensures the effect runs only once
 
-  
+
   // on change
   useEffect(() => {
     setAllLoaded(mockLoad && fontLoaded)
@@ -43,6 +45,10 @@ export default function RootLayout() {
       </View>
     );
   
+  if (!unlocked) return (
+    <Bootpage unlockhook={() => setUnlocked(true)} />
+  )
+
   return (
   <Stack>
     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
