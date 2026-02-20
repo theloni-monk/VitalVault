@@ -4,10 +4,6 @@ author: Thelonious Cooper<theloni@berkeley.edu>
 
 ## Goals
 
-Why write yet another interface instead of just using [skim](https://crates.io/crates/skim-common) or [tantivy](https://github.com/quickwit-oss/tantivy)?
-
-We have different needs of the library. [skim](https://crates.io/crates/skim-common) will be used for its fuzzy matching ability that allows those who are more likely to commit typos not challenged by the interface. Skim doesn't come with a mobile file interface adapter, so thats what we will do. Meanwhile, [tantivy](https://github.com/quickwit-oss/tantivy) is blazingly fast, but also with no simple mobile IO adapter, withinwhich it will likely loose its edge due to SIMD tricks. Lance-DB has its own full-text-search feature, but unfortunately this seems to be more difficult to integrate with a cryptographic scheme that would require 
-
 Local filestore cryptographic security.
  - choice of password or biometric protection
  - ofuscated local database file
@@ -32,6 +28,9 @@ we will use expo to create the apache parquet database file in memory via [DuckD
  - pdf path and per-doc secret
  - keywords for [fuzzy finding](https://github.com/heyimalex/bitap)
  - vectors for nn search
+
+Client-side logic: if key exists, use bioauth to retrieve it and then send it to the server to boot
+if check fails, generate a random number, load it into the native store, and send to rust to create a db with that key
 
 
 ### Challenges
