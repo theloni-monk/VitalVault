@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "vitalvault_src/src-tauri/Cargo.toml"
+    ]
+}
