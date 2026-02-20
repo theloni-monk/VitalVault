@@ -9,6 +9,7 @@ export default function NotFoundScreen() {
         <Link href="/" style={styles.button}>
           Reload
         </Link>
+        How did you get here?
       </View>
     </>
   );
